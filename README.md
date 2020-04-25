@@ -200,7 +200,7 @@ On Linux use `./darknet` instead of `darknet.exe`, like this:`./darknet detector
 On Linux find executable file `./darknet` in the root directory, while on Windows find it in the directory `\build\darknet\x64` 
 
 * Yolo v4 COCO - **image**: `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.25`
-* **Output coordinates** of objects: `darknet.exe detector test cfg/coco.data yolov4.cfg yolov4.weights -ext_output dog.jpg`
+* **Output coordinates** of objects: `darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output data/dog.jpg`
 * Yolo v4 COCO - **video**: `darknet.exe detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output test.mp4`
 * Yolo v4 COCO - **WebCam 0**: `darknet.exe detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -c 0`
 * Yolo v4 COCO for **net-videocam** - Smart WebCam: `darknet.exe detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights http://192.168.0.80:8080/video?dummy=param.mjpg`
